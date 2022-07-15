@@ -5,21 +5,24 @@
     <!-- Main con relative section -->
     <main>
       <PageJumbotron/>
+      <MarketingCards/>
     </main>
     <!-- Footer con props per voci menu -->
   </div>
 </template>
 
 <script>
-// import PageJumbotron from './components/PageJumbotron.vue'
+// import MarketingCars from './components/MarketingCars.vue'
 import PageHeader from './components/PageHeader.vue'
 import PageJumbotron from './components/PageJumbotron.vue'
+import MarketingCards from './components/MarketingCards.vue'
 
 export default {
   name: 'App',
   components: {
     PageHeader,
-    PageJumbotron
+    PageJumbotron,
+    MarketingCards
 
   },
   data() {

@@ -45,7 +45,7 @@ export default {
 
         p {
             font-size: 15px;
-            color: #8E989F;
+            color: $sub_text;
             margin: 20px 0;
         }
 
