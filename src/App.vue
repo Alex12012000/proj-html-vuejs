@@ -7,17 +7,19 @@
       <PageJumbotron/>
       <MarketingCards/>
       <MainFeatures/>
+      <PopularFeatures/>
     </main>
     <!-- Footer con props per voci menu -->
   </div>
 </template>
 
 <script>
-// import MainFeatures from './components/MainFeatures.vue'
+// import PopularFeatures from './components/PopularFeatures.vue'
 import PageHeader from './components/PageHeader.vue'
 import PageJumbotron from './components/PageJumbotron.vue'
 import MarketingCards from './components/MarketingCards.vue'
 import MainFeatures from './components/MainFeatures.vue'
+import PopularFeatures from './components/PopularFeatures.vue'
 
 export default {
   name: 'App',
@@ -25,7 +27,8 @@ export default {
     PageHeader,
     PageJumbotron,
     MarketingCards,
-    MainFeatures
+    MainFeatures,
+    PopularFeatures
 
   },
   data() {

@@ -99,7 +99,6 @@ export default {
 
                     p {
                         margin: 10px 0;
-                        color: $sub_text;
                     }
                 }
             }

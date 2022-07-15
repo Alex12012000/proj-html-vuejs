@@ -53,7 +53,6 @@ export default {
                 }
             }
             p {
-                color: $sub_text;
                 margin: 10px 0;
                 font-size: 13px;
             }
@@ -73,6 +72,7 @@ export default {
                 box-shadow: 0 21px 38px rgba(0,0,0,0.08), 0 15px 12px rgba(0,0,0,0.08);
             }
         }
+
         .main-features-img {
             width: calc((100% / 2) - 10px);
         }
