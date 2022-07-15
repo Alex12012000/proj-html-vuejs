@@ -81,7 +81,7 @@ export default {
         justify-content: space-between;
     }
     .col {
-        width: calc((100% / 3) - 10px);
+        width: calc(100% / 3);
         .card {
             .main-content {
                 display: flex;
@@ -89,12 +89,12 @@ export default {
 
                 img {
                     width: 80px;
+                    margin-right:20px;
                 }
 
                .card-text {
-                    margin-left: 20px;
                     h3 {
-                        font-size: 23px;
+                        font-size: 20px;
                     }
 
                     p {
@@ -107,13 +107,14 @@ export default {
 
         .benefits-list {
             display: flex;
-            justify-content: center; 
+            justify-content: center;
             ul {
-                padding-left: 30px;
+                padding-left: 50px;
                 li {
                     list-style-type: none;
                     margin: 15px 0;
                     font-weight: 600;
+                    font-size: 14px;
                     i {
                         margin-right: 15px;
                         color: $main_color;
