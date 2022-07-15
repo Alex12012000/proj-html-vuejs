@@ -8,18 +8,20 @@
       <MarketingCards/>
       <MainFeatures/>
       <PopularFeatures/>
+      <TestimonialSection/>
     </main>
     <!-- Footer con props per voci menu -->
   </div>
 </template>
 
 <script>
-// import PopularFeatures from './components/PopularFeatures.vue'
+// import TestimonialSection from './components/TestimonialSection.vue'
 import PageHeader from './components/PageHeader.vue'
 import PageJumbotron from './components/PageJumbotron.vue'
 import MarketingCards from './components/MarketingCards.vue'
 import MainFeatures from './components/MainFeatures.vue'
 import PopularFeatures from './components/PopularFeatures.vue'
+import TestimonialSection from './components/TestimonialSection.vue'
 
 export default {
   name: 'App',
@@ -28,7 +30,8 @@ export default {
     PageJumbotron,
     MarketingCards,
     MainFeatures,
-    PopularFeatures
+    PopularFeatures,
+    TestimonialSection
 
   },
   data() {
