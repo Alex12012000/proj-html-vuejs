@@ -38,11 +38,12 @@ export default {
 @import '../style/vars.scss';
 
 header {
-    height: 70px;
+    height: 60px;
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     .logo {
         width: 40px;
@@ -56,7 +57,7 @@ header {
         .menu {
             ul {
                 display: flex;
-                line-height: 70px;
+                line-height: 60px;
             }
             li {
                 list-style-type: none;
@@ -91,11 +92,6 @@ header {
                 right: 0;
                 z-index: 0;
             }
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
         }
     }
 }

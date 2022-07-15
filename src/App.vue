@@ -3,18 +3,24 @@
     <!-- Header con props per voci menu -->
     <PageHeader :headerMenu="headMenu"/>
     <!-- Main con relative section -->
+    <main>
+      <PageJumbotron/>
+    </main>
     <!-- Footer con props per voci menu -->
   </div>
 </template>
 
 <script>
-// import PageHeader from './components/PageHeader.vue'
+// import PageJumbotron from './components/PageJumbotron.vue'
 import PageHeader from './components/PageHeader.vue'
+import PageJumbotron from './components/PageJumbotron.vue'
 
 export default {
   name: 'App',
   components: {
-    PageHeader
+    PageHeader,
+    PageJumbotron
+
   },
   data() {
     return {
