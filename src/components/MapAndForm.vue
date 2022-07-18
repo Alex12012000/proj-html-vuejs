@@ -66,10 +66,10 @@ export default {
         display: flex;
         justify-content: space-between;
         .col {
-        width: calc(100% / 2);
+        width: 55%;
             iframe {
                 width: 100%;
-                height: 500px;
+                height: 450px;
             }
             .logo {
                 width: 120px;
@@ -146,6 +146,7 @@ export default {
         }
 
         .s {
+            width: 45%;
             margin-left: 20px;
         }
     }
