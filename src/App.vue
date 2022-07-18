@@ -10,13 +10,14 @@
       <PopularFeatures/>
       <TestimonialSection/>
       <LastPosts/>
+      <MapAndForm/>
     </main>
     <!-- Footer con props per voci menu -->
   </div>
 </template>
 
 <script>
-// import LastPosts from './components/LastPosts.vue'
+// import MapAndForm from './components/MapAndForm.vue'
 import PageHeader from './components/PageHeader.vue'
 import PageJumbotron from './components/PageJumbotron.vue'
 import MarketingCards from './components/MarketingCards.vue'
@@ -24,6 +25,7 @@ import MainFeatures from './components/MainFeatures.vue'
 import PopularFeatures from './components/PopularFeatures.vue'
 import TestimonialSection from './components/TestimonialSection.vue'
 import LastPosts from './components/LastPosts.vue'
+import MapAndForm from './components/MapAndForm.vue'
 
 export default {
   name: 'App',
@@ -34,7 +36,8 @@ export default {
     MainFeatures,
     PopularFeatures,
     TestimonialSection,
-    LastPosts
+    LastPosts,
+    MapAndForm
 
   },
   data() {
