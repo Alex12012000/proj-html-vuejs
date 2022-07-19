@@ -2,17 +2,23 @@
     <footer>
         <div class="container">
             <div class="content">
+                <!-- Brand Info -->
                 <div class="page-info">
-                    <img src="../assets/img/35.png" alt="">
+                    <!-- Logo -->
+                    <img src="../assets/img/35.png" alt="logo">
                     
                     <p>It is a long established fact that a reader will be distracted by the readable content.</p>
 
                     <span>Copyright @ 2018 <a href="#">Sofbox</a></span>
                 </div>
+
+                <!-- Nav Links -->
                 <div class="footerlinks">
+
                     <div class="list">
                         <h4>Menu</h4>
                         <ul>
+                            <!-- Menu Li creati con v-for e props -->
                             <li v-for="el, index in menuLinks" :key="index">
                                 <a href="#">{{el}}</a>
                             </li>
@@ -38,7 +44,7 @@
             </div>
         </div>
         <div class="arrow">
-            <a href=""><i class="fa-solid fa-chevron-up"></i></a>
+            <a href="#jumbo"><i class="fa-solid fa-chevron-up"></i></a>
         </div>
     </footer>
 </template>
@@ -76,7 +82,7 @@ export default {
                     margin: 30px 0;
                     color: $sub_text;
                     font-size: 13px;
-                    font-weight: 600;
+                    font-weight: 500;
                     a {
                         color: $main_color;
                     }

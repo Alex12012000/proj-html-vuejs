@@ -17,11 +17,13 @@
         </div>
     </div>
 </template>
+
 <script>
 export default {
    name: 'PageJumbotron' 
 }
 </script>
+
 <style lang="scss" scoped>
 @import '../style/btn.scss';
 @import '../style/vars.scss';
@@ -52,6 +54,7 @@ export default {
             width: 120px;
             margin: 60px 0;
         }
+
     }
 
     .jumbo-img {

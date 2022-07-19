@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="testimonial">
         <div class="container">
 
             <!-- header text-->
@@ -8,8 +8,8 @@
                 <p>If you are planning on developing a product landing app or website, take a look at this beautiful-crafted</p>
             </div>
 
-            <!-- testimonial cards -->
-            <div class="testimonial">
+            <!-- testimonial cards hide only if active it's true-->
+            <div class="testimonial" :class="{'hide' : active}">
                 <div class="col">
                 <div class="card">
                     <div class="user-img">
@@ -50,21 +50,89 @@
                 <div class="under-card short"></div>
             </div>
             </div>
+
+            <!-- testimonial cards show only if active it's true -->
+            <div class="testimonial hide" :class="{'show' : active}">
+                <div class="col">
+                    <!-- Card -->
+                <div class="card">
+                    <!-- User Image -->
+                    <div class="user-img">
+                        <img src="../assets/img/face2.jpg" alt="">
+                    </div>
+                    <!-- User Info -->
+                    <div class="name">
+                        <h3>Walter Jackson</h3>
+                        <span>- Founder Sofbox</span>
+                    </div>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.</p>
+
+                    <div class="bg-quote">
+                        <img src="../assets/img/quotes.png" alt="">
+                    </div>
+                </div>
+
+                <div class="under-card"></div>
+                <div class="under-card short"></div>
+                
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="user-img">
+                        <img src="../assets/img/face1.jpg" alt="avatar">
+                    </div>
+                    <div class="name">
+                        <h3>Annette Houston</h3>
+                        <span>- CEO Sofbox</span>
+                    </div>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.</p>
+
+                    <div class="bg-quote">
+                        <img src="../assets/img/quotes.png" alt="avatar">
+                    </div>
+                </div>
+
+                <div class="under-card"></div>
+                <div class="under-card short"></div>
+            </div>
+            </div>
             
-            <!-- switch -->
+            <!-- switch card on dot click-->
             <div class="switch">
-                <div class="dot"></div>
-                <div class="dot"></div>
+                <div class="dot" @click="setActiveFalse()" :class="{'blue' : active === false}"></div>
+                <div class="dot" @click="setActive()" :class="{'blue' : active}"></div>
             </div>
 
         </div>
     </section>
 </template>
+
 <script>
 export default {
-    name: 'TestimonialSection'    
+    name: 'TestimonialSection',
+    data() {
+        return {
+            active: false
+        }
+    },
+    // Se active è uguale a falso al click diventa true
+    methods: {
+        setActive() {
+            if(this.active === false) {
+                this.active = true;
+            }
+        },
+
+        // se active è vero al click diventa false
+        setActiveFalse() {
+             if(this.active === true) {
+                this.active = false;
+            }
+        }
+    },
 }
 </script>
+
 <style lang="scss" scoped>
 @import '../style/vars.scss';
 
@@ -162,6 +230,14 @@ export default {
         
     }
 
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+    }
+
     .switch {
         margin: 70px 0;
         display: flex;
@@ -172,11 +248,15 @@ export default {
             border-radius: 50%;
             background-color: black;
             margin: 0 5px;
+            cursor: pointer;
         }
 
-        .dot:first-child {
+        .blue {
             background-color: $main_color;
-        } 
+        }
+
     }
+
+    
     
 </style>

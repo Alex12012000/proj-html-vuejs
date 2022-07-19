@@ -2,7 +2,7 @@
   <div id="app">
     <!-- Header con props per voci menu -->
     <PageHeader :headerMenu="headMenu"/>
-    
+
     <!-- Main con relative section -->
     <main>
       <PageJumbotron/>
@@ -48,7 +48,29 @@ export default {
   },
   data() {
     return {
-      headMenu: ['Home', 'About us', 'Feature', 'Testimonials', 'Contact US'],
+      // headMenu: ['Home', 'About us', 'Feature', 'Testimonials', 'Contact US'],
+      headMenu: [
+        {
+          link: 'Home',
+          ref: '#jumbo'
+        },
+        {
+          link: 'About us',
+          ref: '#about'
+        },
+        {
+          link: 'Feature',
+          ref: '#feature'
+        },
+        {
+          link: 'Testimonials',
+          ref: '#testimonial'
+        },
+        {
+          link: 'Contact US',
+          ref: '#contact'
+        },
+      ],
       menuFooterLink: ['About Us', 'Theme', 'Features', 'Pricing', 'Blog'],
       aboutUsLink: ['About Sofbox', 'Roadmap', 'How it Work', 'Team', 'News']
     }

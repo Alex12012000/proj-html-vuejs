@@ -1,11 +1,14 @@
 <template >
-    <section>
+    <section id="about">
         <div class="container main-features">
+            <!-- ALL CONTENT -->
             <div class="main-features-content">
+                <!-- main text -->
                 <div class="main-text">
                     <h2>Get tips tricks on how to skyrocket your sales.</h2>
                     <p>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny!</p>
                 </div>
+                <!-- Cards -->
                 <div class="cards">
                     <div class="card ">
                         <img src="../assets/img/510.png" alt="">
@@ -27,17 +30,20 @@
                     </div>
                 </div>
             </div>
+            <!-- Images -->
             <div class="main-features-img">
                 <img src="../assets/img/509.jpeg" alt="">
             </div>
         </div>
     </section>
 </template>
+
 <script>
 export default {
     name: 'MainFeatures'
 }
 </script>
+
 <style lang="scss" scoped>
 @import '../style/vars.scss';
 

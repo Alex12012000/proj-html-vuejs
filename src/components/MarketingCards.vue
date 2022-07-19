@@ -1,8 +1,11 @@
 <template>
     <section>
         <div class="container cards">
+            <!-- Column -->
             <div class="col">
+                <!-- Card -->
                 <div class="card">
+                    <!-- Main Content -->
                     <div class="main-content">
                         <!-- icon -->
                         <img src="../assets/img/24.png" alt="">
@@ -12,6 +15,7 @@
                             <p>It is along established fact that a reader will be distracted.</p>
                         </div>
                     </div>
+                    <!-- Benefits -->
                     <div class="benefits-list">
                         <ul>
                             <li><i class="fa-solid fa-check"></i>SEO</li>
@@ -22,8 +26,11 @@
                     </div>
                 </div>
             </div>
+            <!-- Column -->
             <div class="col">
+                <!-- Cards -->
                 <div class="card">
+                    <!-- Main Content -->
                     <div class="main-content">
                         <!-- icon -->
                         <img src="../assets/img/24.png" alt="">
@@ -33,6 +40,7 @@
                             <p>It is along established fact that a reader will be distracted.</p>
                         </div>
                     </div>
+                    <!-- Benefits -->
                      <div class="benefits-list">
                         <ul>
                             <li><i class="fa-solid fa-check"></i>SEO</li>
@@ -43,8 +51,11 @@
                     </div>
                 </div>
             </div>
+            <!-- Column -->
             <div class="col">
+                <!-- Cards -->
                 <div class="card">
+                    <!-- Main Content -->
                     <div class="main-content">
                         <!-- icon -->
                         <img src="../assets/img/24.png" alt="">
@@ -54,6 +65,7 @@
                             <p>It is along established fact that a reader will be distracted.</p>
                         </div>
                     </div>
+                    <!-- Benefits -->
                      <div class="benefits-list">
                         <ul>
                             <li><i class="fa-solid fa-check"></i>SEO</li>
@@ -67,11 +79,13 @@
         </div>
     </section>
 </template>
+
 <script>
 export default {
     name: 'MarketingCards'
 }
 </script>
+
 <style lang="scss" scoped>
 @import '../style/vars.scss';
 

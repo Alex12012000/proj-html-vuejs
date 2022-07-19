@@ -1,14 +1,21 @@
 <template>
     <header class="container">
+
+        <!-- LOGO -->
         <div class="logo">
             <img src="../assets/img/logo-2.png" alt="logo">
         </div>
+
+        <!-- ALL CONTENT -->
         <div class="header-content">
+            <!-- MENU -->
             <div class="menu">
                 <ul>
-                    <li v-for="el, index in headerMenu" :key="index">{{el}}</li>
+                    <!-- Menu li create von v-for e props -->
+                    <li v-for="el, index in headerMenu" :key="index"><a :href="el.ref">{{el.link}}</a></li>
                 </ul>
             </div>
+            <!-- ICONS -->
             <div class="icons">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -16,6 +23,7 @@
                     0
                 </div>
             </div>
+            <!-- BUTTON -->
             <div class="btn">
                 <a href="#">Get Started</a>
             </div>
@@ -62,6 +70,9 @@ header {
             li {
                 list-style-type: none;
                 margin: 0 10px;
+                a:hover {
+                    color: $main_color;
+                }
             }
             li:first-child {
                 color: $main_color;

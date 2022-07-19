@@ -1,10 +1,12 @@
 <template>
     <section>
         <div class="container">
+            <!-- Section Header -->
             <div class="section-header">
                 <h2>Latest Post</h2>
                 <span>If you are planning on developing a product landing.</span>
             </div>
+            <!-- Cards -->
             <div class="cards">
                 <div class="col">
                     <div class="card">
@@ -87,6 +89,10 @@ export default {
                 background-color: white;
                 font-size: 13px;
                 color: $sub_text;
+            }
+
+            .tag:hover {
+                color: $main_color;
             }
         }
     }
